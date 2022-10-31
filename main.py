@@ -65,3 +65,7 @@ class HttpIntegrateController(http.Controller):
         ctx = dict(self.env['whatsapp.message.wizard']._context)
         ctx['message'] = "get-api triggred..."
         return '{Status: triggered, get-api: Add user or password}'
+
+    def button_print(self):
+        print("git push")
+
